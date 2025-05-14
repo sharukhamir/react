@@ -26,7 +26,7 @@ const Carousel = ({ images, interval = 2000 }) => {
         alt={`Slide ${index}`}
         style={{
           width: "1050px",
-          height: "1200px",
+          height: "800px",
           objectFit: "cover",
           borderRadius: "8px",
         }}
@@ -39,7 +39,7 @@ const Carousel = ({ images, interval = 2000 }) => {
 
 const buttonStyle1 = (pos) => ({
   position: "relative",
-  bottom: "900px",
+  bottom: "470px",
   [pos]: "10px",
   transform: "translateY(-50%)",
   fontSize: "30px",
@@ -54,7 +54,7 @@ const buttonStyle1 = (pos) => ({
 const buttonStyle2 = (pos) => ({
     position: "relative",
     left: "1030px",
-    bottom: "900px",
+    bottom: "470px",
     [pos]: "10px",
     transform: "translateY(-50%)",
     fontSize: "30px",

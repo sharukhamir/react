@@ -12,7 +12,7 @@ function Contactus() {
 
     return(
         <div className="w-full h-auto flex flex-wrap items-center justify-center bg-gray-100 overflow-x-hidden">
-                <div className="w-full h-screen flex flex-col items-center justify-center bg-gray-100">
+                <div className="w-full h-[600px] flex flex-col items-center justify-center bg-gray-100">
                         <img src={second} className="w-[1400px] h-[750px] relative" alt="image" />
                         <h1 className="text-white font-bold text-[30px] relative bottom-[530px] right-[620px]">Hepta</h1>
                         <h1 className="text-white font-bold w-[550px] text-[70px] text-center relative bottom-[420px]">Contact Us</h1>
@@ -24,16 +24,16 @@ function Contactus() {
                             <NavLink to="/heptaoption" className={({isActive}) =>`w-[35px] h-[3px] bg-white block `}></NavLink>
                     </div>
                  </div>
-                 <div className="w-1/2 h-auto flex flex-wrao items-center justify-center bg-gray-100 p-20 overflow-hidden">
+                 <div className="w-1/2 h-auto flex flex-wrao items-center justify-center bg-gray-100 p-20 overflow-hidden relative top-[50px]">
                  <div className="w-[800px] h-[800px] flex flex-wrap  items-center justify-center pt-30 pl-25 relative left-[0px]">
                   
-                  <form className="w-[600px] mx-auto h-[500px] p-6 bg-white rounded shadow space-y-4 relative bottom-[200px]">
+                  <form className="w-[600px] h-[600px] p-6 bg-white rounded shadow space-y-4 relative bottom-[200px]">
       {/* Row 1: Labels for Name and Phone */}
-      <div className="flex justify-between">
-        <label htmlFor="name" className="w-1/2 text-sm font-medium text-gray-700">
+      <div className="flex justify-between pt-10">
+        <label htmlFor="name" className="w-1/2 text-[18px] font-medium text-gray-700">
           Name
         </label>
-        <label htmlFor="phone" className="w-1/2 text-sm font-medium text-gray-700">
+        <label htmlFor="phone" className="w-1/2 text-[18px] font-medium text-gray-700">
           Phone
         </label>
       </div>
@@ -45,7 +45,7 @@ function Contactus() {
           id="name"
           name="name"
           placeholder="Enter name"
-          className="w-1/2 border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-1/2 h-[50px] border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
           required
         />
         <input
@@ -53,14 +53,14 @@ function Contactus() {
           id="phone"
           name="phone"
           placeholder="Enter phone"
-          className="w-1/2 border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-1/2 h-[50px] border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
           required
         />
       </div>
 
       {/* Row 3: Label for Email */}
       <div>
-        <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+        <label htmlFor="email" className="block text-[18px] font-medium text-gray-700">
           Email
         </label>
       </div>
@@ -72,14 +72,14 @@ function Contactus() {
           id="email"
           name="email"
           placeholder="Enter email"
-          className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full h-[50px] border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
           required
         />
       </div>
 
       {/* Row 5: Label for Message */}
       <div>
-        <label htmlFor="message" className="block text-sm font-medium text-gray-700">
+        <label htmlFor="message" className="block text-[18px] font-medium text-gray-700">
           Message
         </label>
       </div>
@@ -91,7 +91,7 @@ function Contactus() {
           name="message"
           rows="4"
           placeholder="Enter your message"
-          className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full h-[200px] border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
           required
         ></textarea>
       </div>
@@ -100,7 +100,7 @@ function Contactus() {
       <div>
         <button
           type="submit"
-          className="w-full bg-blue-600 text-white font-semibold py-2 px-4 rounded hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-[150px] border-2 border-blue-300 py-2 px-4 rounded hover:bg-blue-300"
         >
           Submit
         </button>
@@ -108,7 +108,9 @@ function Contactus() {
     </form>
 
                  </div>
+                 
                  </div>
+                 
                  <div className="w-1/2 h-[800px] flex flex-wrap items-center justify-center overflow-hidden">
                  <div className="w-200px h-[600px] flex flex-col items-center justify-center relative bottom-[180px]">
                   <h1 className="text-sky-300 font-bold relative right-[150px]">Address</h1>
@@ -119,11 +121,12 @@ function Contactus() {
                   <span className="font-bold text-3xl relative right-[10px] p-8">info@yourdomain.com</span>
                  </div>
                  </div>
+                 <hr className="w-full text-gray-300 relative bottom-[100px]" />
 
 
-                 <div className="w-full h-[700px] bg-white flex flex-wrap items-center justify-center relative">
+                 <div className="w-full h-auto bg-white flex flex-wrap items-center justify-center relative top-[250px]">
                   <h1 className="font-bold text-6xl relative bottom-[350px] left-[400px]">Happy Customers</h1>
-                  <span className="w-[350px] h-[350px] bg-white m-4 relative right-[480px] bottom-[20px]">
+                  <span className="w-[350px] h-[350px] m-4 relative right-[480px]">
                                   <img src={person1} className="w-50px h-[80px] rounded-full" alt="" />
                                   <p className="text-[18px] relative top-[10px]">“Far far away, behind the word mountains,
                                      far from the countries Vokalia and 
@@ -133,7 +136,7 @@ function Contactus() {
                                         language ocean.”</p>
                                         <p className="text-[18px] relative top-[20px]">— Clare Gupta</p>
                                 </span>
-                                <span className="w-[350px] h-[350px] bg-white m-4 relative right-[420px] bottom-[20px]">
+                                <span className="w-[350px] h-[350px] m-4 relative right-[420px]">
                                                 <img src={person2} className="w-50px h-[80px] rounded-full" alt="" />
                                                 <p className="text-[18px] relative top-[10px]">“Far far away, behind the word mountains,
                                                    far from the countries Vokalia and 
@@ -143,7 +146,7 @@ function Contactus() {
                                                       language ocean.”</p>
                                                       <p className="text-[18px] relative top-[20px]">— Rogie Slater</p>
                                               </span>
-                                              <span className="w-[350px] h-[350px] bg-white m-4 relative left-[450px] bottom-[400px]">
+                                              <span className="w-[350px] h-[350px] m-4 relative left-[450px] bottom-[400px]">
                                                 <img src={person3} className="w-50px h-[80px] rounded-full" alt="" />
                                                 <p className="text-[18px] relative top-[10px]">“Far far away, behind the word mountains,
                                                    far from the countries Vokalia and 
@@ -154,7 +157,7 @@ function Contactus() {
                                                       <p className="text-[18px] relative top-[20px]">— John Doe</p>
                                               </span>
                  </div>
-                 <div className="w-full h-auto bg-black flex flex-wrap items-center justify-center relative bottom-[200px]">
+                 <div className="w-full h-auto bg-black flex flex-wrap items-center justify-center relative bottom-[0px]">
                   <span className="m-20 pt-[50px]">
                                 <h1 className="text-white font-bold relative bottom-[40px]">Quick Link</h1>
                                 <p className="text-white mb-[15px]">About Us</p>
